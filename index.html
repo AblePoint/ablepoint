@@ -36,11 +36,11 @@
       width: 30%;
     }
 
-    /* Анимация появления */
+    /* Анимация появления снизу */
     @keyframes fadeInUp {
       from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(15px);
       }
       to {
         opacity: 1;
@@ -49,17 +49,18 @@
     }
 
     /* Стили ссылок */
-    a.project-link:link,
-    a.project-link:visited {
+    a.project-link {
       color: #66b3ff;
       text-decoration: none;
       font-weight: bold;
       display: inline-block;
       opacity: 0; /* начальное состояние */
+      transform: translateY(15px);
       animation: fadeInUp 0.6s ease forwards;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
 
-    /* Задержка для каждой ссылки, чтобы появлялись по очереди */
+    /* Задержка для поочерёдного появления */
     .link1 { animation-delay: 0.2s; }
     .link2 { animation-delay: 0.4s; }
     .link3 { animation-delay: 0.6s; }
@@ -67,10 +68,9 @@
     a.project-link:hover {
       color: orange;
       transform: scale(1.05);
-      transition: color 0.3s ease, transform 0.3s ease;
     }
-    a.project-link:active {
-      color: orange;
+    a.project-link:visited {
+      color: #66b3ff;
     }
   </style>
 </head>
@@ -109,6 +109,7 @@
   <p>👉 <a class="project-link link3" href="https://www.alixabar.uz/" target="_blank">«Проект Алихабар»</a></p>
 </body>
 </html>
+
 
 
 
