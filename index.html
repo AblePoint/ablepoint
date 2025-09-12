@@ -27,22 +27,29 @@
       opacity: 0.9;
       margin-bottom: 10px;
     }
-
-    /* Стили для ссылок — правильный порядок LVHA */
+    /* Стили для ссылок */
     a.project-link:link {
-      color: #66b3ff; /* светло-синий по умолчанию */
+      color: #66b3ff;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease;
     }
     a.project-link:visited {
-      color: #66b3ff; /* после посещения снова светло-синий */
+      color: #66b3ff;
     }
     a.project-link:hover {
-      color: orange; /* оранжевый при наведении */
+      color: orange;
     }
     a.project-link:active {
       color: orange;
+    }
+    /* Стили для линии */
+    hr {
+      border: none;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 12px auto;
+      width: 60%;
     }
   </style>
 </head>
@@ -54,19 +61,17 @@
 
   <p>Xush kelibsiz mening xab-saytimga</p>
   <p>Bu yerda mening barcha loyihalarim va kanallarim jamlangan.</p>
+  <hr>
 
   <p>Хуш келибсиз менинг хаб-сайтимга</p>
   <p>Бу ерда менинг барча лойиҳаларим ва каналларим жамланган.</p>
+  <hr>
 
   <p>Добро пожаловать на мой сайт. Здесь собраны все мои проекты и каналы.</p>
+  <hr>
 
   <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Alixabar loyihasi»</a></p>
   <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Алихабар лойиҳаси»</a></p>
   <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Проект Алихабар»</a></p>
 </body>
 </html>
-
-
-
-
-
