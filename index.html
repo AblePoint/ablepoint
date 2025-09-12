@@ -27,18 +27,22 @@
       opacity: 0.9;
       margin-bottom: 10px;
     }
-    /* Стили для ссылок */
-    a.project-link {
+
+    /* Стили для ссылок — правильный порядок LVHA */
+    a.project-link:link {
       color: #66b3ff; /* светло-синий по умолчанию */
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s ease; /* плавная анимация */
+      transition: color 0.3s ease;
+    }
+    a.project-link:visited {
+      color: #66b3ff; /* после посещения снова светло-синий */
     }
     a.project-link:hover {
       color: orange; /* оранжевый при наведении */
     }
-    a.project-link:visited {
-      color: #66b3ff; /* после посещения снова светло-синий */
+    a.project-link:active {
+      color: orange;
     }
   </style>
 </head>
@@ -61,6 +65,7 @@
   <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Проект Алихабар»</a></p>
 </body>
 </html>
+
 
 
 
