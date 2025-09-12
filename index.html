@@ -13,19 +13,31 @@
       text-align: center;
     }
     h1 {
-      font-size: 32px; /* увеличено с 28px */
+      font-size: 32px;
       margin-bottom: 14px;
     }
     .subtitle {
-      font-size: 20px; /* увеличено с 18px */
+      font-size: 20px;
       font-style: italic;
       color: #a0a4b0;
       margin-bottom: 26px;
     }
     p {
-      font-size: 18px; /* увеличено с 16px */
+      font-size: 18px;
       opacity: 0.9;
       margin-bottom: 10px;
+    }
+    /* Стили для ссылок */
+    a.project-link {
+      color: #e6e9ef; /* цвет по умолчанию */
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.project-link:hover {
+      color: blue; /* при наведении */
+    }
+    a.project-link:visited {
+      color: white; /* после посещения */
     }
   </style>
 </head>
@@ -43,9 +55,10 @@
 
   <p>Добро пожаловать на мой сайт. Здесь собраны все мои проекты и каналы.</p>
 
-  <p><strong>Alixabar loyihasi</strong></p>
-  <p><strong>Алихабар лойиҳаси</strong></p>
-  <p><strong>«Проект Алихабар»</strong></p>
+  <p><a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Alixabar loyihasi»</a></p>
+  <p><a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Алихабар лойиҳаси»</a></p>
+  <p><a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Проект Алихабар»</a></p>
 </body>
 </html>
+
 
