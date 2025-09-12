@@ -14,22 +14,30 @@
     }
     h1 {
       font-size: 32px;
-      margin-bottom: 14px;
+      margin-bottom: 0;
     }
     .subtitle {
       font-size: 20px;
       font-style: italic;
       color: #a0a4b0;
-      margin-bottom: 26px;
+      margin-bottom: 0;
     }
     p {
       font-size: 18px;
       opacity: 0.9;
-      margin-bottom: 10px;
+      margin-bottom: 0;
     }
-    /* Стили для ссылок */
+    /* Разделительная линия */
+    hr {
+      border: none;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 12px auto 20px;
+      width: 60%;
+    }
+    /* Стили ссылок */
     a.project-link:link {
-      color: #66b3ff; /* светло-синий */
+      color: #66b3ff; /* светло-синий по умолчанию */
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease;
@@ -43,41 +51,43 @@
     a.project-link:active {
       color: orange;
     }
-    /* Стили для линии */
-    hr {
-      border: none;
-      height: 1px;
-      background-color: rgba(255, 255, 255, 0.2);
-      margin: 10px auto;
-      width: 30%; /* укороченная линия */
-    }
   </style>
 </head>
 <body>
+  <!-- Заголовок -->
   <h1>ABLE.UZ - Disable the past. Enable the future.</h1>
+  <hr>
+
+  <!-- Слоганы -->
   <div class="subtitle">ABLE.UZ — “O‘tmishni ortda qoldiring. Kelajakni yoqing.”</div>
+  <hr>
+
   <div class="subtitle">ABLE.UZ — “Ўтмишни ортда қолдиринг. Келажакни ёқинг.”</div>
+  <hr>
+
   <div class="subtitle">ABLE.UZ — «Оставьте прошлое позади. Включите будущее.»</div>
+  <hr>
 
-  <!-- Приветствие на 3 языках -->
+  <!-- Приветствие и описание: узбекский (латиница) -->
   <p>Xush kelibsiz mening xab-saytimga</p>
-  <hr>
-  <p>Хуш келибсиз менинг хаб-сайтимга</p>
-  <hr>
-  <p>Добро пожаловать на мой сайт.</p>
-
-  <!-- Описание на 3 языках -->
   <p>Bu yerda mening barcha loyihalarim va kanallarim jamlangan.</p>
   <hr>
+
+  <!-- Приветствие и описание: узбекский (кириллица) -->
+  <p>Хуш келибсиз менинг хаб-сайтимга</p>
   <p>Бу ерда менинг барча лойиҳаларим ва каналларим жамланган.</p>
   <hr>
-  <p>Здесь собраны все мои проекты и каналы.</p>
 
-  <!-- Название проекта с ссылками -->
+  <!-- Приветствие и описание: русский -->
+  <p>Добро пожаловать на мой сайт. Здесь собраны все мои проекты и каналы.</p>
   <hr>
+
+  <!-- Ссылки на Alixabar -->
   <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Alixabar loyihasi»</a></p>
   <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Алихабар лойиҳаси»</a></p>
   <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Проект Алихабар»</a></p>
 </body>
 </html>
+
+
 
