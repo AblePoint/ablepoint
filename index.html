@@ -27,7 +27,7 @@
       opacity: 0.9;
       margin-bottom: 0;
     }
-    /* Разделительная линия — укороченная */
+    /* Короткая разделительная линия */
     hr {
       border: none;
       height: 1px;
@@ -35,42 +35,24 @@
       margin: 12px auto 20px;
       width: 30%;
     }
-
-    /* Анимация появления снизу */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Стили ссылок */
-    a.project-link {
+    /* Ссылки: светло-синий -> оранжевый при наведении -> снова светло-синий */
+    a.project-link:link {
       color: #66b3ff;
       text-decoration: none;
       font-weight: bold;
-      display: inline-block;
-      opacity: 0; /* начальное состояние */
-      transform: translateY(15px);
-      animation: fadeInUp 0.6s ease forwards;
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
-
-    /* Задержка для поочерёдного появления */
-    .link1 { animation-delay: 0.2s; }
-    .link2 { animation-delay: 0.4s; }
-    .link3 { animation-delay: 0.6s; }
-
-    a.project-link:hover {
-      color: orange;
-      transform: scale(1.05);
+      transition: color 0.2s ease, text-decoration 0.2s ease;
     }
     a.project-link:visited {
       color: #66b3ff;
+    }
+    a.project-link:hover {
+      color: orange;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 2px;
+    }
+    a.project-link:active {
+      color: orange;
     }
   </style>
 </head>
@@ -103,12 +85,13 @@
   <p>Добро пожаловать на мой сайт. Здесь собраны все мои проекты и каналы.</p>
   <hr>
 
-  <!-- Ссылки на Alixabar с анимацией -->
-  <p>👉 <a class="project-link link1" href="https://www.alixabar.uz/" target="_blank">«Alixabar loyihasi»</a></p>
-  <p>👉 <a class="project-link link2" href="https://www.alixabar.uz/" target="_blank">«Алихабар лойиҳаси»</a></p>
-  <p>👉 <a class="project-link link3" href="https://www.alixabar.uz/" target="_blank">«Проект Алихабар»</a></p>
+  <!-- Ссылки на Alixabar -->
+  <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Alixabar loyihasi»</a></p>
+  <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Алихабар лойиҳаси»</a></p>
+  <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Проект Алихабар»</a></p>
 </body>
 </html>
+
 
 
 
