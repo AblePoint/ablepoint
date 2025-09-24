@@ -27,7 +27,6 @@
       opacity: 0.9;
       margin-bottom: 0;
     }
-    /* Короткая разделительная линия */
     hr {
       border: none;
       height: 1px;
@@ -35,7 +34,8 @@
       margin: 12px auto 20px;
       width: 30%;
     }
-    /* Ссылки: светло-синий -> оранжевый при наведении -> снова светло-синий */
+
+    /* Базовый стиль ссылок */
     a.project-link:link {
       color: #66b3ff;
       text-decoration: none;
@@ -55,12 +55,15 @@
       color: orange;
     }
 
-    /* Специальные ховеры для YouTube и Instagram */
+    /* Специальные ховеры */
     a.project-link.youtube-link:hover {
       color: #FF6347; /* YouTube — мягкий томатный */
     }
     a.project-link.instagram-link:hover {
       color: #E1306C; /* Instagram — светлая вишня */
+    }
+    a.project-link.special-link:hover {
+      color: #6A1B9A; /* Alixabar и Взгляд Алишера — фиолетовый */
     }
   </style>
 </head>
@@ -72,34 +75,28 @@
   <!-- Слоганы -->
   <div class="subtitle">ABLE.UZ — “O‘tmishni ortda qoldiring. Kelajakni yoqing.”</div>
   <hr>
-
   <div class="subtitle">ABLE.UZ — “Ўтмишни ортда қолдиринг. Келажакни ёқинг.”</div>
   <hr>
-
   <div class="subtitle">ABLE.UZ — «Оставьте прошлое позади. Включите будущее.»</div>
   <hr>
 
-  <!-- Приветствие и описание: узбекский (латиница) -->
+  <!-- Приветствия -->
   <p>Xush kelibsiz mening xab-saytimga</p>
   <p>Bu yerda mening barcha loyihalarim va kanallarim jamlangan.</p>
   <hr>
-
-  <!-- Приветствие и описание: узбекский (кириллица) -->
   <p>Хуш келибсиз менинг хаб-сайтимга</p>
   <p>Бу ерда менинг барча лойиҳаларим ва каналларим жамланган.</p>
   <hr>
-
-  <!-- Приветствие и описание: русский -->
   <p>Добро пожаловать на мой сайт. Здесь собраны все мои проекты и каналы.</p>
   <hr>
 
   <!-- Ссылки на Alixabar -->
-  <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Alixabar loyihasi»</a></p>
-  <p>👉 <a class="project-link" href="https://www.alixabar.uz/" target="_blank">«Алихабар лойиҳаси»</a></p>
+  <p>👉 <a class="project-link special-link" href="https://www.alixabar.uz/" target="_blank">«Alixabar loyihasi»</a></p>
+  <p>👉 <a class="project-link special-link" href="https://www.alixabar.uz/" target="_blank">«Алихабар лойиҳаси»</a></p>
   <hr>
 
   <!-- Ссылка: Проект Взгляд Алишера -->
-  <p>👉 <a class="project-link" href="#" target="_blank">«Проект Взгляд Алишера»</a></p>
+  <p>👉 <a class="project-link special-link" href="#" target="_blank">«Проект Взгляд Алишера»</a></p>
   <hr>
 
   <!-- Telegram -->
